@@ -84,3 +84,111 @@
   #view-guide .guide-card p { font-size:14.5px; line-height:1.95; }
   #view-guide .mini-link { font-size:12.5px; padding:7px 12px; }
 }
+
+
+/* Responsive readability v3: tablet + desktop, preserve approved mobile typography */
+@media (min-width:650px) {
+  /* Shared tablet / desktop type scale, independent of the mobile overrides */
+  body { font-size:16px; }
+  .shell { max-width:860px; }
+  .bottom-nav { max-width:860px; }
+  .topbar { height:72px; }
+  .brand { font-size:15px; }
+  .brand small { font-size:10px; }
+  .top-date { font-size:12px; }
+  .hero-kicker { font-size:11px; }
+  .hero-chips span { font-size:12px; }
+  .hero-bottom { font-size:11px; }
+  .notice { padding:17px 19px; }
+  .notice b { font-size:15px; }
+  .notice small { font-size:14px; line-height:1.8; }
+  .quick-box { padding:20px; min-height:102px; }
+  .quick-label { font-size:13px; }
+  .quick-box strong { font-size:17px; }
+  .quick-box small { font-size:13px; }
+  .section-intro { padding-top:37px; padding-bottom:17px; }
+  .eyebrow { font-size:12px; }
+  .section-intro h2 { font-size:29px; }
+  .section-intro h2 em { font-size:18px; }
+  .section-intro p { font-size:15.5px; line-height:1.8; }
+  .date-tabs { gap:11px; padding-bottom:22px; }
+  .date-tab { flex-basis:99px; padding:13px 9px; }
+  .date-tab strong { font-size:28px; }
+  .date-tab span, .date-tab small { font-size:12px; }
+  .day-heading { padding:26px; }
+  .day-heading .day-sub { font-size:12px; }
+  .day-heading h3 { font-size:26px; }
+  .day-heading p { font-size:15px; line-height:1.85; }
+  .tip-line { font-size:14px; line-height:1.8; }
+  .event { grid-template-columns:36px minmax(0,1fr); gap:13px; margin-bottom:17px; }
+  .event-dot { width:35px; height:35px; font-size:15px; }
+  .timeline:before { left:17px; }
+  .event-card { padding:20px 21px; }
+  .event-time { font-size:16px; }
+  .event-tag { font-size:12px; padding:4px 9px; }
+  .event-card h4 { font-size:18px; line-height:1.6; }
+  .event-card p { font-size:15.5px; line-height:1.9; }
+  .event-links { gap:10px; margin-top:14px; }
+  .mini-link { font-size:13.5px; padding:8px 13px; line-height:1.55; }
+  .day-end { font-size:13px; }
+  .tile-list { gap:17px; }
+  .place-top { padding:21px; align-items:flex-start; }
+  .place-top > div:last-child { min-width:0; flex:1; }
+  .place-type { font-size:13px; }
+  .place-card h3 { font-size:19px; margin:5px 0 9px; line-height:1.55; }
+  .place-card p { font-size:15.5px; line-height:1.9; }
+  .place-footer { padding:14px 21px; gap:12px; }
+  .place-note { font-size:13.5px; line-height:1.7; }
+  .place-actions { flex-wrap:wrap; }
+  .booking-progress-header strong { font-size:17px; }
+  .booking-progress-header span { font-size:13px; }
+  .booking-group h3 { font-size:18px; margin-bottom:12px; }
+  .booking-item { gap:15px; padding:19px; margin-bottom:11px; }
+  .booking-item input { width:21px; height:21px; }
+  .booking-body { min-width:0; }
+  .booking-body strong { font-size:16px; line-height:1.65; }
+  .booking-body small { font-size:14.5px; line-height:1.85; margin-top:7px; }
+  .ghost-button { font-size:14px; padding:12px 19px; }
+  .guide-list { gap:15px; }
+  .guide-card { padding:21px; gap:15px; }
+  .guide-card > div:last-child { min-width:0; flex:1; }
+  .guide-card h3 { font-size:18px; line-height:1.6; }
+  .guide-card p { font-size:15.5px; line-height:1.9; }
+  .nav-button { font-size:14px; }
+  .nav-symbol { font-size:27px; }
+  .site-footer small { font-size:14px; }
+  .site-footer p { font-size:12px; }
+}
+@media (min-width:1000px) {
+  /* Desktop uses the available width and makes dense content easier to scan */
+  .shell { max-width:1120px; }
+  .topbar { padding:0 46px; }
+  .hero { min-height:420px; padding:51px 46px 64px; }
+  .hero-copy { max-width:550px; }
+  .hero h1 { font-size:64px; }
+  .hero p { font-size:16px; }
+  .thai-script { font-size:44px; }
+  .temple { width:370px; right:26px; bottom:8px; opacity:.75; }
+  .hero-bottom { left:46px; right:46px; }
+  .notice, .quick-bar, .booking-progress, .booking-group { margin-left:44px; margin-right:44px; }
+  .quick-bar { gap:18px; }
+  .section-intro { padding-left:44px; padding-right:44px; }
+  .date-tabs { padding-left:44px; padding-right:44px; overflow:visible; }
+  .date-tab { flex:1 1 0; max-width:160px; }
+  .day-panel, .tile-list, .guide-list { padding-left:44px; padding-right:44px; }
+  .day-panel { display:grid; grid-template-columns:minmax(0, .78fr) minmax(0, 1.36fr); gap:24px; align-items:start; }
+  .day-heading { min-height:280px; position:sticky; top:26px; margin:0; }
+  .day-heading p { max-width:100%; }
+  .day-heading:after { font-size:110px; top:-30px; }
+  .day-end { grid-column:1 / -1; margin-top:0; }
+  #view-food .tile-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:19px; }
+  #view-food .place-card { display:flex; flex-direction:column; min-width:0; }
+  #view-food .place-footer { margin-top:auto; align-items:flex-start; }
+  #view-booking .booking-group { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:13px 18px; margin-bottom:28px; }
+  #view-booking .booking-group h3 { grid-column:1 / -1; margin:0; }
+  #view-booking .booking-item { margin:0; height:100%; }
+  #view-guide .guide-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; align-items:stretch; }
+  #view-guide .guide-card { margin:0; }
+  .bottom-nav { width:560px; max-width:calc(100% - 36px); left:50%; right:auto; transform:translateX(-50%); height:76px; border:1px solid #e4ddce; border-bottom:0; border-radius:22px 22px 0 0; box-shadow:0 -8px 36px rgba(24,55,43,.11); }
+  .site-footer { padding-bottom:45px; }
+}
