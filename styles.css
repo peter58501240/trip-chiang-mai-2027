@@ -37,3 +37,50 @@
   .guide-card p{font-size:13px}
   .nav-button{font-size:12.5px}
 }
+
+
+/* Mobile typography pass 2: food, bookings and guide */
+@media (max-width:649px) {
+  #view-food .section-intro h2,
+  #view-booking .section-intro h2,
+  #view-guide .section-intro h2 { font-size:25px; }
+  #view-food .section-intro p,
+  #view-booking .section-intro p,
+  #view-guide .section-intro p { font-size:14px; line-height:1.8; }
+  #view-food .eyebrow,
+  #view-booking .eyebrow,
+  #view-guide .eyebrow { font-size:11px; }
+
+  /* 美食：主要介紹要和每日行程備註一樣好讀 */
+  #view-food .tile-list { gap:15px; }
+  #view-food .place-top { gap:13px; padding:18px 15px; align-items:flex-start; }
+  #view-food .place-top > div:last-child { min-width:0; flex:1; }
+  #view-food .place-type { font-size:12.5px; line-height:1.6; }
+  #view-food .place-card h3 { font-size:17px; line-height:1.55; margin:4px 0 8px; }
+  #view-food .place-card p { font-size:14.5px; line-height:1.9; }
+  #view-food .place-footer { align-items:flex-start; padding:12px 15px; gap:11px; }
+  #view-food .place-note { font-size:12.5px; line-height:1.65; }
+  #view-food .place-actions { flex-wrap:wrap; }
+  #view-food .mini-link { font-size:12.5px; padding:7px 12px; }
+
+  /* 預約：清單大字、每一行容易點選 */
+  #view-booking .booking-progress { padding:20px; }
+  #view-booking .booking-progress-header { align-items:flex-start; flex-wrap:wrap; }
+  #view-booking .booking-progress-header strong { font-size:16px; }
+  #view-booking .booking-progress-header span { font-size:12.5px; }
+  #view-booking .booking-group { margin-bottom:22px; }
+  #view-booking .booking-group h3 { font-size:16px; margin-bottom:12px; }
+  #view-booking .booking-item { gap:13px; padding:17px 15px; margin-bottom:10px; }
+  #view-booking .booking-item input { width:20px; height:20px; margin-top:3px; }
+  #view-booking .booking-body { min-width:0; }
+  #view-booking .booking-body strong { font-size:15.5px; line-height:1.65; }
+  #view-booking .booking-body small { font-size:14px; line-height:1.8; margin-top:6px; }
+  #view-booking .ghost-button { font-size:13px; padding:11px 18px; }
+
+  /* 提醒：長段落適當增加字級與行距 */
+  #view-guide .guide-card { gap:13px; padding:18px 15px; margin-bottom:14px; }
+  #view-guide .guide-card > div:last-child { min-width:0; flex:1; }
+  #view-guide .guide-card h3 { font-size:17px; line-height:1.6; margin-bottom:8px; }
+  #view-guide .guide-card p { font-size:14.5px; line-height:1.95; }
+  #view-guide .mini-link { font-size:12.5px; padding:7px 12px; }
+}
