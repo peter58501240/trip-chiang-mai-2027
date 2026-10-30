@@ -220,3 +220,13 @@
   .choice-option h5{font-size:17px}
   .event-card .choice-option p{font-size:15px;line-height:1.85}
 }
+
+
+/* Dated restaurant tabs: compact scrolling on phones and clear active state */
+.food-day-tabs{display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;padding:5px 20px 14px;white-space:nowrap}
+.food-day-tabs::-webkit-scrollbar{display:none}
+.food-day-button{appearance:none;background:#fff;border:1px solid #dfd9c9;border-radius:100px;padding:9px 15px;color:#657467;font-weight:700;font-size:13px;cursor:pointer;line-height:1.45;min-width:56px}
+.food-day-button.active{background:var(--pine);border-color:var(--pine);color:#fff1d1;box-shadow:0 4px 12px rgba(22,54,40,.16)}
+.food-day-button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+@media (min-width:650px){.food-day-tabs{padding:5px 35px 20px;gap:10px}.food-day-button{font-size:14px;padding:11px 18px}}
+@media (min-width:1000px){.food-day-tabs{padding-left:44px;padding-right:44px}}
