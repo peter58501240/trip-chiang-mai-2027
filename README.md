@@ -3,7 +3,7 @@
 日期：2027-02-02 至 2027-02-07（清邁當地時間為準）。
 
 ## 網站
-GitHub Pages 網址（待啟用發布）：
+GitHub Pages 網址（已發布）：
 https://peter58501240.github.io/trip-chiang-mai-2027/
 
 這是獨立 GitHub Repository 的旅遊網站。根目錄使用 `index.html`、`styles.css`、`app.js`，不用安裝或建置即可在支援靜態網頁的環境運作。
