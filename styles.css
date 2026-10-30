@@ -192,3 +192,31 @@
   .bottom-nav { width:560px; max-width:calc(100% - 36px); left:50%; right:auto; transform:translateX(-50%); height:76px; border:1px solid #e4ddce; border-bottom:0; border-radius:22px 22px 0 0; box-shadow:0 -8px 36px rgba(24,55,43,.11); }
   .site-footer { padding-bottom:45px; }
 }
+
+
+/* 2027-02-03: clear A/B routes and three-choice lunch cards */
+.choice-group{margin-top:16px;display:grid;gap:11px}
+.choice-hint{font-size:12px;color:#7b6c52;line-height:1.65;padding:9px 11px;background:#f6f0e3;border-radius:9px}
+.choice-option{background:#fcfbf6;border:1px solid #e5dfd0;border-left:3px solid #b89662;border-radius:12px;padding:13px 13px 14px;min-width:0}
+.choice-option:nth-of-type(3){border-left-color:#72917a}
+.choice-pill{display:inline-block;font-size:11px;color:#6b5031;background:#eee1c6;padding:3px 10px;border-radius:50px;letter-spacing:.02em}
+.choice-option h5{font-size:15px;line-height:1.55;margin:7px 0 7px;color:#253e31}
+.choice-option p{font-size:13px;line-height:1.85;margin:0;color:#66726b}
+.choice-actions{margin-top:11px;display:flex;flex-wrap:wrap;gap:8px}
+.choice-actions .mini-link{white-space:normal}
+@media (max-width:649px){
+  .choice-group{gap:12px;margin-top:17px}
+  .choice-hint{font-size:13px}
+  .choice-option{padding:15px 13px}
+  .choice-pill{font-size:12px;padding:4px 10px}
+  .choice-option h5{font-size:16px}
+  .event-card .choice-option p{font-size:14px;line-height:1.85}
+  .choice-actions .mini-link{font-size:12.5px;padding:8px 13px}
+}
+@media (min-width:650px){
+  .choice-hint{font-size:13px}
+  .choice-option{padding:17px}
+  .choice-pill{font-size:13px}
+  .choice-option h5{font-size:17px}
+  .event-card .choice-option p{font-size:15px;line-height:1.85}
+}
