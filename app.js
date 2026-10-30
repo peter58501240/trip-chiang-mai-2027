@@ -24,6 +24,19 @@ const days=[
 {"date":"02/07","weekday":"日","day":"DAY 06","title":"清邁早班機・安全回家","summary":"最後一天不硬塞景點。前一晚先準備早餐與接駁，清晨從飯店出發，留足機場報到及香港轉機時間。","hint":"10:35 國際航班，建議07:15以前搭車離開飯店；若飯店改住 BED Nimman，重算出發路線。不要預設有早餐盒、已安排接駁或航班時刻不變；一律依機票及航空公司最新公告。","items":[{"t":"2/6（六）21:15前","name":"前晚完成回程準備｜不要拖到早上才找車","desc":"確認護照、機票、香港轉機、行李直掛與重量，手機充電、網卡、退房結帳；向飯店確認能否提供外帶早餐盒，以及是否可代叫晨間計程車。Grab 預約不代表已配對成功，隔天要再次確認。","map":"POR Thapae Gate Chiang Mai","icon":"✓","tag":"前一晚完成","type":"warn","highlight":true},{"t":"06:10–06:40","name":"早餐三種備案｜不依賴尚未確認的早餐服務","desc":"選最方便的方式帶早餐，機場安檢對液體有限制；如果未準備也不用為找餐廳耽誤退房。","icon":"☕","tag":"早餐 A／B／C","choices":[{"label":"A・飯店有回覆才算","name":"POR 早餐盒｜前一天向櫃檯確認","desc":"2/6 直接詢問飯店07:00前能否提供外帶早餐。沒有收到明確答覆，就不把早餐盒當成已存在的服務。","map":"POR Thapae Gate Chiang Mai"},{"label":"B・最穩健","name":"2/6 晚上先買好麵包、水果與常溫點心","desc":"前一晚從飯店附近有營業的便利商店買好，早晨起床後可直接吃、或帶到機場；飲料經過國際線安檢前請遵守液體限制。","map":"7-Eleven near Tha Phae Gate Chiang Mai"},{"label":"C・機場再吃","name":"清邁機場國際航廈｜通關後看現場餐飲店","desc":"前提是07:45～08:00順利到機場並完成報到；機場店家開門時間與可選餐點不保證，需隨身準備備援小點。","map":"Chiang Mai International Airport International Terminal"}]},{"t":"06:40–07:05","name":"整理房間、退房及檢查行李","desc":"房卡、護照、手機、充電線、外幣與退稅或購物單據確認。先核對航空公司的手提與托運規定，若凌晨睡不好仍不能延誤集合。","icon":"⌂","tag":"退房"},{"t":"約07:15","name":"出發前往清邁國際機場（CNX）","desc":"以計程車／Grab 為主，按當日路況與實際住宿地點估算，不保證固定車程。清邁機場官方提供 Grab，但清晨司機是否順利接單不能保證；若遲遲配不到車，請飯店協助叫車。","map":"Chiang Mai International Airport Chiang Mai Thailand","official":"https://chiangmai.airportthai.co.th/","icon":"➜","tag":"交通優先","type":"warn","highlight":true},{"t":"約07:40–08:00","name":"機場國際航廈報到、托運、安檢與出境","desc":"目標提早約2.5至3小時抵達機場；實際報到開櫃、截止與證照要求要依承運航空公司公告。機場官方列出報到→安檢→護照查驗→登機流程；不要以某一家航空公司的櫃檯時段套用所有航班。","map":"Chiang Mai International Airport International Terminal","official":"https://chiangmai.airportthai.co.th/","icon":"✈","tag":"機場作業"},{"t":"10:35–14:20","name":"清邁 → 香港｜CX5757","desc":"依既有機票時刻規劃；起飛是清邁當地時間，抵達是香港當地時間。若為共用班號，先確認實際承運航空公司與報到櫃檯，轉機航廈及托運直掛也需再核對。","icon":"✈","tag":"航班"},{"t":"14:20–16:45","name":"香港轉機｜依航班指示前往登機門","desc":"注意機場顯示板及登機門變更；不要只看出發前截圖。若有時間可在轉機區用餐，但先確認下一段登機時間，避免排餐廳耽誤。","icon":"➜","tag":"轉機"},{"t":"16:45–18:15","name":"香港 → 高雄｜CX458","desc":"抵達高雄，回程以最新電子機票和航空公司當日通知為準。","icon":"✈","tag":"返台"}]}
 ];
 const foods=[
+{"day":"02/05","icon":"☕","type":"2/5（五）咖啡 A・創意特調","name":"GRAPH Coffee One Nimman","desc":"One Nimman 內的創意特調咖啡，省去額外車程；常態營業約到22:00，當天依店家公告。","note":"2/5 咖啡三選一・商場內最順路","map":"GRAPH Coffee One Nimman Chiang Mai"},
+{"day":"02/05","icon":"☕","type":"2/5（五）咖啡 B・職人拉花","name":"Roast8ry Lab","desc":"尼曼區咖啡職人與拉花小店，常態營業至17:00；需要從 One Nimman 額外步行，留意排隊與距離。","note":"2/5 咖啡三選一・選咖啡體驗","map":"Roast8ry Lab Nimman Chiang Mai"},
+{"day":"02/05","icon":"🍰","type":"2/5（五）咖啡 C・甜點拍照","name":"Saruda Finest Pastry（One Nimman）","desc":"One Nimman A109，查詢時評價約5.0／5（594則）。精緻甜點好拍照，已吃過咖哩麵不必再吃第二頓正餐。","note":"2/5 咖啡三選一・輕量分享","map":"Saruda Finest Pastry One Nimman A109 Chiang Mai"},
+{"day":"02/05","icon":"🍛","type":"2/5（五）晚餐 A・蘭納柚木老屋","name":"Dash Teak House","desc":"38/2 Moon Muang Soi 2；官方週五10:00–22:00。羅望子雞肉、沙嗲及泰式料理，老屋氛圍漂亮，價格中等。","note":"2/5 晚餐三選一・記得核對座位","map":"Dash Teak House 38/2 Moon Muang Soi 2 Chiang Mai","official":"https://www.dashchiangmai.com/"},
+{"day":"02/05","icon":"🍲","type":"2/5（五）晚餐 B・平價泰式","name":"my favourite pork place","desc":"32 Prapokklao Road，靠近 Kalm 南側古城；查詢時約4.7／5（283則）、週五常態07:00–23:00，可試豬肉冬蔭功湯。","note":"2/5 晚餐三選一・便利實惠","map":"my favourite pork place 32 Prapokklao Road Chiang Mai"},
+{"day":"02/05","icon":"♨","type":"2/5（五）晚餐 C・多種街頭小吃","name":"Chiang Mai Gate Market","desc":"古城南門 Bumrung Buri Road，晚間熟食攤販陸續營業；可試泰式炒河粉、北方香腸、烤串。各攤營業與付款方式不同。","note":"2/5 晚餐三選一・不用預約","map":"Chiang Mai Gate Market Bumrung Buri Road Chiang Mai"},
+{"day":"02/06","icon":"🍛","type":"2/6（六）JJ 午餐 A","name":"Kang Jingjai","desc":"Jing Jai Central 內，週六常態10:00–21:00，查詢時約4.7／5（641則），適合坐下吃跨國東南亞料理；初一要確認。","note":"2/6 午餐三選一・市場內","map":"Kang Jing Jai Restaurant Jing Jai Market Chiang Mai"},
+{"day":"02/06","icon":"🍜","type":"2/6（六）JJ 午餐 B","name":"Pho Vieng Chan","desc":"Jing Jai Market Zone B，週六午餐常態11:00–14:00，查詢時約4.5／5（356則）。牛肉河粉與湯麵，出發前核對初一營業。","note":"2/6 午餐三選一・市場內","map":"Pho Vieng Chan Jing Jai Market Zone B Chiang Mai"},
+{"day":"02/06","icon":"☕","type":"2/6（六）下午咖啡備案","name":"Akha Ama Coffee（The New Original）","desc":"古城內 Moon Muang Soi 9，泰北阿卡族咖啡豆與老屋空間，官網週六08:00–17:00；適合買咖啡豆伴手禮。","note":"2/6 Santi 後三選一・約16:15前抵達","map":"Akha Ama Coffee The New Original Moon Muang Soi 9 Chiang Mai","official":"https://www.akhaamacoffee.com/"},
+{"day":"02/06","icon":"🥘","type":"2/6（六）晚餐 B・蘭納傳統菜","name":"Huen Muan Jai","desc":"24 Ratchaphuek Alley，週六常態17:00–21:00；查詢時約4.3／5。適合搭配北門爵士之夜，不適合先去南門夜市再繞回來。","note":"2/6 晚餐擇一・搭配 Plan B","map":"Huen Muan Jai 24 Ratchaphuek Alley Chiang Mai"},
+{"day":"02/06","icon":"🍲","type":"2/6（六）晚餐 C・古城平價","name":"Thai Food Resto","desc":"47/2 Singharat 4 Alley，週六常態11:00–21:00；查詢時約4.8／5（1,111則）。泰式咖哩麵、炒飯等家常料理。","note":"2/6 晚餐擇一・晚間跨區要叫車","map":"Thai Food Resto 47/2 Singharat 4 Alley Chiang Mai"},
+{"day":"02/06","icon":"🥈","type":"2/6（六）晚餐 A・夜市小吃","name":"Wua Lai Saturday Walking Street","desc":"週六常態17:00–22:00。從清邁南門沿 Wua Lai Road 逛銀飾、文創與攤販小吃；2027農曆初一是否如常開攤要先核對。","note":"2/6 晚餐擇一・搭配 Plan A","map":"Wua Lai Saturday Walking Street Chiang Mai","official":"https://silvertemple.org/en/experiences/walking-street"},
+
 {"icon":"🌿","type":"2/4（四）咖啡 A・網美拍照","name":"No.39 Cafe｜湖畔木屋","desc":"39/2 Suthep。藍綠色人工湖與木屋是重點，常態08:30–17:00；目前約3.6／5（68則），咖啡與服務評價較兩極，主要推薦拍照風景。","note":"2/4 咖啡三選一・拍照首選","map":"No.39 Cafe 39/2 Suthep Chiang Mai"},
 {"icon":"🎵","type":"2/4（四）咖啡 B・復古","name":"Ram Poeng Cafe｜音樂與甜點","desc":"13/2 Suthep，靠近藝術村。復古音樂收藏、手工蛋糕；目前約4.7／5（140則），週四常態09:00–16:00。","note":"2/4 咖啡三選一・提早去","map":"Ram Poeng Cafe 13/2 Suthep Chiang Mai"},
 {"icon":"☕","type":"2/4（四）咖啡 C・安靜","name":"Farmstory Baankangwat｜手沖咖啡","desc":"Baan Kang Wat 入口附近，最省交通；約4.9／5（43則，樣本較少），週四常態07:15–18:00。","note":"2/4 咖啡三選一・不必搭車","map":"Farmstory Baankangwat Chiang Mai"},
@@ -50,14 +63,15 @@ const bookingGroups=[
 {id:"dress",name:"Love Season Studio・2/3（三）妝髮與攝影",desc:"13:30妝髮、15:00拍攝為希望時段；確認攝影地點、修圖和交件。",link:L.dress},
 {id:"spaFeb4",name:"2/4（四）15:45 SPA 三選一",desc:"Zira Spa／Calm Fern Forest／Fah Lanna Old City，只選一家。確定90分鐘方案、價格、分店與預約時段，還要保留藝術村返回古城的車程。"},
 {id:"kalm",name:"Kalm Village・2/5（五）17:00",desc:"目前官網列週五場，必須確認2027日期、項目、名額。",link:L.kalm},
-{id:"santi",name:"Santi Float in Sound・2/6（六）",desc:"13:00只是規劃目標，確認當天有班及至少2人條件。",link:L.santi}
+{id:"santi",name:"Santi Float in Sound・2/6（六）",desc:"13:00只是規劃目標，確認當天有班、成團人數、時段與取消規則。",link:L.santi}
 ]},
 {title:"出發前核對",items:[
 {id:"flight",name:"航班、香港轉機與行李直掛",desc:"核對航空公司最新航班、航廈、轉機與托運資訊。"},
 {id:"festival",name:"2/6春節營業：JJ Market與所有餐廳",desc:"出發前7天、前1天各確認一次，必要時聯絡店家。",link:L.jj},
 {id:"maps",name:"所有餐廳與景點的 Google 地圖分店",desc:"檢查「營業中」、近期評論、特殊營業時間，別只看舊攻略。"},
-{id:"breakfast",name:"2/7清晨飯店外帶早餐或自備早餐",desc:"2/6向櫃檯確認，不保證有提供 Breakfast Box。",link:L.hotel},
+{id:"breakfast",name:"2/7清晨飯店外帶早餐或自備早餐",desc:"2/6向櫃檯確認，不保證有早餐盒；前晚先買好麵包／水果，無須早晨出門找店。",link:L.hotel},
 {id:"tdac",name:"泰國 TDAC 數位入境卡",desc:"依現行規則入境前3天內（含抵達日）免費填寫，出發前再核對。",link:L.tdac},
+{id:"airportPickup",name:"2/7（日）清晨前往機場的接駁與退房",desc:"前一晚預約計程車或向飯店請求叫車，07:15以前出發。當天早晨再確認司機是否接單、機場國際航廈報到規則。"},
 {id:"passport",name:"護照、免簽及旅遊保險",desc:"依出發時的官方規定核對，不以過時攻略為準。"}
 ]}];
 const guides=[
@@ -93,7 +107,35 @@ tabs.querySelectorAll("button").forEach(b=>{b.classList.toggle("active",Number(b
 }
 tabs.addEventListener("click",e=>{const b=e.target.closest("[data-day]");if(b){renderDay(Number(b.dataset.day));}});
 renderDay(0);
-qs("#foodCards").innerHTML=foods.map(f=>'<article class="place-card"><div class="place-top"><div class="place-icon">'+esc(f.icon)+'</div><div><span class="place-type">'+esc(f.type)+'</span><h3>'+esc(f.name)+'</h3><p>'+esc(f.desc)+'</p></div></div><div class="place-footer"><span class="place-note">'+esc(f.note)+'</span><div class="place-actions">'+nav(f.map)+(f.official?official(f.official):'')+'</div></div></article>').join("");
+
+/* 食物卡片按日期篩選，避免手機一次顯示所有餐廳。 */
+const inferFoodDay=(f)=>{
+ if(f.day)return f.day;
+ const t=f.type||"";
+ const m=t.match(/2\/(2|3|4|5|6)(?!\d)/);
+ if(m)return "02/0"+m[1];
+ if(f.name.startsWith("Baan Landai"))return "02/03";
+ if(f.name==="Cooking Love 3")return "02/04";
+ if(f.name==="Khao Soi Mae Sai")return "02/05";
+ if(f.name==="Jing Jai Market")return "02/06";
+ return "general";
+};
+const foodButtons=[{value:"all",label:"全部"},{value:"02/02",label:"2/2"},{value:"02/03",label:"2/3"},{value:"02/04",label:"2/4"},{value:"02/05",label:"2/5"},{value:"02/06",label:"2/6"}];
+const foodContainer=qs("#foodCards");
+foodContainer.insertAdjacentHTML("beforebegin",'<div class="food-day-tabs" id="foodDayTabs" role="group" aria-label="篩選日期">'+
+foodButtons.map(x=>'<button type="button" class="food-day-button" data-food-day="'+x.value+'">'+x.label+'</button>').join("")+'</div>');
+const foodDayTabs=qs("#foodDayTabs");
+function renderFood(selected){
+ foodDayTabs.querySelectorAll("[data-food-day]").forEach(b=>{
+ const active=b.dataset.foodDay===selected;
+ b.classList.toggle("active",active);
+ b.setAttribute("aria-pressed",active?"true":"false");
+ });
+ const visible=selected==="all"?foods:foods.filter(f=>inferFoodDay(f)===selected);
+ foodContainer.innerHTML=visible.map(f=>'<article class="place-card"><div class="place-top"><div class="place-icon">'+esc(f.icon)+'</div><div><span class="place-type">'+esc(f.type)+'</span><h3>'+esc(f.name)+'</h3><p>'+esc(f.desc)+'</p></div></div><div class="place-footer"><span class="place-note">'+esc(f.note)+'</span><div class="place-actions">'+nav(f.map)+(f.official?official(f.official):'')+'</div></div></article>').join("");
+}
+foodDayTabs.addEventListener("click",e=>{const b=e.target.closest("[data-food-day]");if(b)renderFood(b.dataset.foodDay);});
+renderFood("02/02");
 const storeKey="lan­na-chiangmai-2027-checks-v1";
 let checks={};
 try{checks=JSON.parse(localStorage.getItem(storeKey)||"{}")||{}}catch(err){checks={}}
