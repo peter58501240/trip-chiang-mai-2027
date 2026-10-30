@@ -39,6 +39,11 @@ const days=[
 ]}
 ];
 const foods=[
+{"icon":"🌿","type":"2/4（四）咖啡 A・網美拍照","name":"No.39 Cafe｜湖畔木屋","desc":"39/2 Suthep。藍綠色人工湖與木屋是重點，常態08:30–17:00；目前約3.6／5（68則），咖啡與服務評價較兩極，主要推薦拍照風景。","note":"2/4 咖啡三選一・拍照首選","map":"No.39 Cafe 39/2 Suthep Chiang Mai"},
+{"icon":"🎵","type":"2/4（四）咖啡 B・復古","name":"Ram Poeng Cafe｜音樂與甜點","desc":"13/2 Suthep，靠近藝術村。復古音樂收藏、手工蛋糕；目前約4.7／5（140則），週四常態09:00–16:00。","note":"2/4 咖啡三選一・提早去","map":"Ram Poeng Cafe 13/2 Suthep Chiang Mai"},
+{"icon":"☕","type":"2/4（四）咖啡 C・安靜","name":"Farmstory Baankangwat｜手沖咖啡","desc":"Baan Kang Wat 入口附近，最省交通；約4.9／5（43則，樣本較少），週四常態07:15–18:00。","note":"2/4 咖啡三選一・不必搭車","map":"Farmstory Baankangwat Chiang Mai"},
+{"icon":"🌳","type":"2/4（四）按摩後加碼","name":"Fern Forest Cafe｜蕨類花園","desc":"54/1 Singharat Road，靠近 Calm Massage Fern Forest 分店；目前約4.4／5，常態08:00–20:00。選 SPA B 再來喝茶吃蛋糕最順。","note":"選擇 Calm 按摩時適用","map":"Fern Forest Cafe 54/1 Singharat Rd Chiang Mai"},
+{"icon":"🍰","type":"2/4（四）按摩後加碼","name":"Fahtara Coffee｜水車庭園","desc":"57 Wiang Kaew Road，和 Fah Lanna Spa 古城店同一園區；約4.7／5，常態08:00–21:00。選 SPA C 不用再移動就能喝茶吃甜點。","note":"選擇 Fah Lanna 按摩時適用","map":"Fahtara Coffee 57 Wiang Kaew Road Chiang Mai","official":"https://www.fahtara.coffee/about-us/"},
 {"icon":"🍛","type":"2/2（二）晚餐 A・泰式小店","name":"Sawasdee You｜街頭泰食","desc":"Tha Phae Road，週二常態18:00–00:00，評價約4.7／5（2026年查詢時）。可吃泰式炒河粉、喝泰奶；靠近塔佩門，氣氛輕鬆有設計感。","note":"晚餐三選一・優先推薦","map":"Sawasdee you - Art and Street food Tha Phae Road Chiang Mai"},
 {"icon":"🍲","type":"2/2（二）晚餐 B・泰式家常菜","name":"Aroy Dee｜咖哩麵與打拋飯","desc":"157 Mun Mueang Rd，週二常態11:00–22:00，評價約4.6／5（2026年查詢時）。適合想吃道地泰菜；太晚到需先確認是否還能點餐。","note":"晚餐三選一・留意打烊時間","map":"Aroy Dee 157 Mun Mueang Rd Chiang Mai"},
 {"icon":"🍜","type":"2/2（二）晚餐 C・深夜備案","name":"LanZhou Noodles｜塔佩路店","desc":"291 Tha Phae Road，查詢時標示24小時營業。現拉牛肉湯麵；若班機延誤、餐廳都打烊時可作為備案。","note":"不是泰北小吃・認明塔佩路分店","map":"LanZhou Noodles 291 Tha Phae Road Chiang Mai"},
@@ -58,6 +63,7 @@ const bookingGroups=[
 {id:"hotel",name:"POR Thapae Gate・2/2入住～2/7退房",desc:"確認房型、五晚、取消條件；目前只是推薦住宿。",link:L.hotel},
 {id:"baan",name:"Baan Landai・2/3（三）19:00",desc:"建議提前6–8週詢問；以餐廳正式確認訊息為準。",link:L.baan},
 {id:"dress",name:"Love Season Studio・2/3（三）妝髮與攝影",desc:"13:30妝髮、15:00拍攝為希望時段；確認攝影地點、修圖和交件。",link:L.dress},
+{id:"spaFeb4",name:"2/4（四）15:45 SPA 三選一",desc:"Zira Spa／Calm Fern Forest／Fah Lanna Old City，只選一家。確定90分鐘方案、價格、分店與預約時段，還要保留藝術村返回古城的車程。"},
 {id:"kalm",name:"Kalm Village・2/5（五）17:00",desc:"目前官網列週五場，必須確認2027日期、項目、名額。",link:L.kalm},
 {id:"santi",name:"Santi Float in Sound・2/6（六）",desc:"13:00只是規劃目標，確認當天有班及至少2人條件。",link:L.santi}
 ]},
